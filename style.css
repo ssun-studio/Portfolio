@@ -259,3 +259,134 @@ section{
 .socials i:hover{
     transform: scale(1.1);
 }
+
+
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        padding: 1rem;
+    }
+    /* General Styles for About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Default for larger screens */
+    gap: 10rem;
+    text-align: center;
+}
+
+.about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.about img {
+    width: 25vw; /* Default width for larger screens */
+    border-radius: 20%;
+}
+
+/* Mobile View - Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Make the about section more compact for mobile */
+    .box {
+        width: 80%; /* Make the box take up more width on smaller screens */
+        height: auto; /* Allow the height to adjust automatically */
+        padding: 1rem; /* Add padding inside the box */
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+
+    .box .btn {
+        padding: 0.5rem 1rem; /* Adjust button size inside the box */
+    }
+    .about {
+        flex-direction: column; /* Stack content vertically on mobile */
+        gap: 2rem; /* Reduce space between image and text */
+        padding: 2rem 0; /* Add padding for better spacing */
+    }
+
+    .about .about-container {
+        flex-direction: column; /* Stack content vertically */
+        gap: 2rem; /* Reduce space between the elements */
+    }
+
+    .about img {
+        width: 60vw; /* Increase image size to fill more space on mobile */
+        max-width: 80%; /* Ensure the image doesn't stretch too large */
+        border-radius: 15%; /* Slightly smaller border-radius for better fit */
+    }
+
+    .info-box {
+        gap: 1rem; /* Reduce gap in the info-box for better fit on mobile */
+    }
+
+    .info-box h1 {
+        font-size: 2.5rem; /* Smaller font size for h1 */
+    }
+
+    .info-box h3 {
+        font-size: 1.5rem; /* Smaller font size for h3 */
+    }
+
+    .info-box span {
+        font-size: 1.5rem; /* Smaller font size for span */
+    }
+}
+.nav-links {
+        display: none; /* Hide navigation links */
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .experience-info {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .experience-info img {
+        width: 50vw; /* Make images bigger for mobile */
+        border-radius: 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem; /* Smaller font size for section title */
+        margin-bottom: 2rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack the grid items vertically */
+        gap: 2rem;
+    }
+
+    .grid-card {
+        padding: 2rem; /* Reduce padding for mobile */
+        text-align: center;
+    }
+
+    .project-grid {
+        display: flex;
+        flex-direction: column; /* Stack project items vertically */
+    }
+
+    .project-card {
+        padding: 2rem; /* Adjust padding for mobile */
+    }
+
+    .socials {
+        gap: 2rem; /* Reduce gap between social icons */
+    }
+}
